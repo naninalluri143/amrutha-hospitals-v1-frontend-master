@@ -176,17 +176,11 @@
           })
           .then(function(response) {
             console.log("Email sent successfully", response);
-            // Reset form values
-                document.getElementById("email-form").reset();
-
-                // Show an alert
-                alert("Email sent successfully!");
           })
           .catch(function(error) {
             console.error("Email could not be sent", error);
             .catch(function (error) {
                 console.error("Email could not be sent", error);
-                alert("Email could not be sent. Please try again later.");
               });
           });
         });
